@@ -32,24 +32,6 @@ namespace FindPrimes
         }
 
         /// <summary>
-        /// Create a list of all prime numbers before the given value.
-        /// </summary>
-        /// <param name="n"> int n </param>
-        /// <returns> List<int> of prime numbers before n </int> </returns>
-        public static List<int> PrimesBeforeN(int n)
-        {
-            List<int> primes = new();
-            for (int i = n - 1; i > 1; i--)
-            {
-                if (IsPrime(i))
-                {
-                    primes.Add(i);
-                }
-            }
-            return primes;
-        }
-
-        /// <summary>
         /// Find the total number of prime numbers before a given value, not including the value.
         /// </summary>
         /// <param name="n"> int n </param>
@@ -66,5 +48,24 @@ namespace FindPrimes
             }
             return total;
         }
+
+        /// <summary>
+        /// Create a list of all prime numbers before the given value.
+        /// </summary>
+        /// <param name="n"> int n </param>
+        /// <returns> List<int> of prime numbers before n </int> </returns>
+        public static List<int> PrimesBeforeN(int n)
+        {
+            List<int> primes = new();
+            for (int i = n - 1; i > 1; i--)
+            {
+                if (IsPrime(i))
+                {
+                    primes.Add(i);
+                }
+            }
+            return primes;
+        }
     }
+
 }
