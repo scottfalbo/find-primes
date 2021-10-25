@@ -10,6 +10,25 @@ namespace FindPrimes
     {
 
         /// <summary>
+        /// Find the total number of primr number before a given value.
+        /// Iterates though all values less than n and calls IsPrime().
+        /// </summary>
+        /// <param name="n"> int n </param>
+        /// <returns> int total, total prime numbers </returns>
+        public static int TotalPrimesBeforeN(int n)
+        {
+            int total = 0;
+            for (int i = n-1; i > 1; i--)
+            {
+                if (IsPrime(i))
+                {
+                    total++;
+                }
+            }
+            return total;
+        }
+
+        /// <summary>
         /// Checks to see if a number is prime by dividing it by every value less than itself
         /// and checking for a remainder.
         /// </summary>
