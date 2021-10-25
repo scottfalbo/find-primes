@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindPrimes", "FindPrimes\FindPrimes.csproj", "{1FC3D818-EF9C-44AC-B82B-BFB8DFEA2596}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindPrimesTests", "FindPrimesTests\FindPrimesTests.csproj", "{DA1142BD-6D9F-460C-98C8-FBFB321A771C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1FC3D818-EF9C-44AC-B82B-BFB8DFEA2596}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FC3D818-EF9C-44AC-B82B-BFB8DFEA2596}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FC3D818-EF9C-44AC-B82B-BFB8DFEA2596}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA1142BD-6D9F-460C-98C8-FBFB321A771C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA1142BD-6D9F-460C-98C8-FBFB321A771C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA1142BD-6D9F-460C-98C8-FBFB321A771C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA1142BD-6D9F-460C-98C8-FBFB321A771C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
