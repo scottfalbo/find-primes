@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace FindPrimes
 {
-    class FindPrimes
+    public class FindPrimes
     {
-        public bool IsPrime(int n)
+
+        /// <summary>
+        /// Checks to see if a number is prime by dividing it by every value less than itself
+        /// and checking for a remainder.
+        /// </summary>
+        /// <param name="n"> int n, the number to check </param>
+        /// <returns> true : false </returns>
+        public static bool IsPrime(int n)
         {
             if (n < 2)
             {
