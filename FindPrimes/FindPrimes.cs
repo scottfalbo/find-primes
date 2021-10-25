@@ -10,7 +10,7 @@ namespace FindPrimes
     {
 
         /// <summary>
-        /// Find the total number of primr number before a given value.
+        /// Find the total number of prime numbers before a given value, not including the value.
         /// Iterates though all values less than n and calls IsPrime().
         /// </summary>
         /// <param name="n"> int n </param>

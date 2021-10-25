@@ -22,5 +22,15 @@ namespace FindPrimesTests
             bool result = FindPrimes.FindPrimes.IsPrime(n);
             Assert.Equal(expected, result);
         }
+
+        [Theory]
+        [InlineData(17, 6)]
+        [InlineData(42, 13)]
+        [InlineData(100, 25)]
+        public void TotalPrimesBeforeNCanSuccessfullyReturnTotalNumberOfPrimes(int n, int expected)
+        {
+            int result = FindPrimes.FindPrimes.TotalPrimesBeforeN(n);
+            Assert.Equal(expected, result);
+        }
     }
 }
