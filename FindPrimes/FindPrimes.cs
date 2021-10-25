@@ -9,6 +9,29 @@ namespace FindPrimes
     public class FindPrimes
     {
         /// <summary>
+        /// Checks to see if a number is prime by dividing it by every value less than itself
+        /// and checking for a remainder.
+        /// </summary>
+        /// <param name="n"> int n, the number to check </param>
+        /// <returns> true : false </returns>
+        public static bool IsPrime(int n)
+        {
+            if (n < 2)
+            {
+                return false;
+            }
+
+            for (int i = 2; i < n; i++)
+            {
+                if (n % i == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        /// <summary>
         /// Create a list of all prime numbers before the given value.
         /// </summary>
         /// <param name="n"> int n </param>
@@ -42,29 +65,6 @@ namespace FindPrimes
                 }
             }
             return total;
-        }
-
-        /// <summary>
-        /// Checks to see if a number is prime by dividing it by every value less than itself
-        /// and checking for a remainder.
-        /// </summary>
-        /// <param name="n"> int n, the number to check </param>
-        /// <returns> true : false </returns>
-        public static bool IsPrime(int n)
-        {
-            if (n < 2)
-            {
-                return false;
-            }
-
-            for (int i = 2; i < n; i++)
-            {
-                if (n % i == 0)
-                {
-                    return false;
-                }
-            }
-            return true;
         }
     }
 }
